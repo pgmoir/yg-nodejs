@@ -1,0 +1,53 @@
+<% if (title.complex === undefined || title.complex === false) { %>
+  <section id="title" class="container-fluid" role="banner">
+    <div class="container-yg">
+      <h1 class="h-standard"><%= title.title %></h1>
+    </div>
+  </section>
+<% } else { %>
+  <section id="title" class="banner-content" role="banner">
+    <span class="banner-background d-none d-md-block" style="background-image: url(<%= title.background %>)"></span>
+    <div class="container-fluid">
+      <div class="container-yg">
+        <div class="d-none d-md-block hgt-3"></div>
+        <div class="d-block d-md-none hgt-1"></div>
+        <h1>
+          <span class="h-standard d-block d-md-none"><%= title.title %></span>
+          <span class="h-highlight h-dark d-none d-md-inline-block"><%= title.title %></span>
+        </h1>
+        <div class="d-none d-md-block hgt-10"></div>
+        <div class="row">
+          <div class="col-12">
+            <% if (title.card != undefined) { %>
+            <div class="card <%= title.card.style %>">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12 col-md-8 pb-3">
+                    <h2 class="card-title h5"><%= title.card.title %></h2>
+                    <% for (let text of title.card.texts) { %>
+                      <p class="card-text"><%- text %></p>
+                    <% } %>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <% if (title.card.link.title === undefined) { %>
+                      <a href="<%= title.card.link.url %>" class="btn btn-primary btn-textwrap w-100"><%= title.card.link.button %></a>
+                    <% } else { %>
+                      <div class="card">
+                        <div class="card-body bg-white">
+                          <h3 class="card-title h5"><%= title.card.link.title %></h5>
+                          <p class="card-text"><%- title.card.link.text %></p>
+                          <a href="<%= title.card.link.url %>" class="btn btn-primary"><%= title.card.link.button %></a>
+                        </div>
+                      </div>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<% } %>

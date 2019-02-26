@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Imports */
+.yg {
+  /* colors */
+}
+.yg .h-standard {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.yg .h-highlight {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border-bottom: 0.25rem;
+}
+.yg .h-highlight.h-light {
+  border-bottom: 0.25rem solid #cccccc;
+  background-color: #eeeeee;
+  color: #2d3039;
+}
+.yg .h-highlight.h-dark {
+  border-bottom: 0.25rem solid #121315;
+  background-color: #2d3039;
+  color: #eeeeee;
+}
+.yg .container-yg {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.yg .banner-background {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-bottom: -400px;
+  top: 57px;
+  left: 0;
+  width: 100%;
+}
+.yg ul.links {
+  list-style-type: none;
+  padding: 0;
+}
+.yg ul.links li {
+  padding-bottom: 0.35rem;
+}
+.yg ul.links li a {
+  color: inherit;
+  text-decoration: none;
+}
+.yg ul.links.inline li {
+  display: inline;
+  padding-right: 1rem;
+}
+.yg .footer {
+  background-color: #202329;
+  color: #cccccc;
+}
+.yg .footer h6, .yg .footer .h6 {
+  color: #eeeeee;
+}
+.yg .footer hr {
+  background-color: #eeeeee;
+}
+.yg .footer.footer-copyright {
+  background-color: #2d3039;
+}
+.yg .footer.footer-copyright a {
+  color: #6cc6cc;
+}
+.yg .form-control-help {
+  margin-top: 0rem;
+  margin-bottom: 0.25rem;
+  line-height: 2;
+}
+.yg .minw-12 {
+  min-width: 12rem;
+}
+.yg .hgt-1 {
+  height: 1rem;
+}
+.yg .hgt-3 {
+  height: 3rem;
+}
+.yg .hgt-10 {
+  height: 10rem;
+}
+.yg .btn-textwrap {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+.yg h1[class*=icon-],
+.yg .h1[class*=icon-] {
+  padding-right: 5rem;
+  position: relative;
+}
+.yg h1[class*=icon-]:after,
+.yg .h1[class*=icon-]:after {
+  position: absolute;
+  right: 1rem;
+}
+.yg h1.icon-bus:after, .yg .h1.icon-bus:after {
+  content: url(images/icons/bus.png);
+}
+.yg h1.icon-cc:after, .yg .h1.icon-cc:after {
+  content: url(images/icons/cc.png);
+}
+.yg h1.icon-dlr:after, .yg .h1.icon-dlr:after {
+  content: url(images/icons/dlr.png);
+}
+.yg h1.icon-lez:after, .yg .h1.icon-lez:after {
+  content: url(images/icons/lez.png);
+}
+.yg h1.icon-tfl:after, .yg .h1.icon-tfl:after {
+  content: url(images/icons/tfl.png);
+}
+.yg h1.icon-tram:after, .yg .h1.icon-tram:after {
+  content: url(images/icons/tram.png);
+}
+.yg h1.icon-tube:after, .yg .h1.icon-tube:after {
+  content: url(images/icons/tube.png);
+}
+.yg .list-group-item {
+  pointer-events: none;
+}
+.yg .list-group-item:hover {
+  background-color: #eff6fd;
+}
+.yg .list-group-item a {
+  pointer-events: auto;
+  position: relative;
+  width: 100% !important;
+  display: block !important;
+}
+.yg .list-group-item a:hover {
+  text-decoration: none;
+}
+.yg .list-group-item a[class*=icon-]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0rem;
+}
+.yg .list-group-item a[class*=icon-] span {
+  padding-right: 2rem;
+}
+.yg .list-group-item a[class*=icon-sm-]:after {
+  font-family: "Font Awesome 5 Brands";
+}
+.yg .list-group-item a.icon-internal:after {
+  content: "";
+  right: 0.4rem;
+}
+.yg .list-group-item a.icon-external:after {
+  content: "";
+}
+.yg .list-group-item a.icon-download:after {
+  content: "";
+  right: 0.2rem;
+}
+.yg .list-group-item a.icon-sm-twitter:after {
+  content: "";
+  right: 0.2rem;
+}
+.yg .list-group-item a.icon-sm-facebook:after {
+  content: "";
+  right: 0.2rem;
+}
+.yg .list-group-item a.icon-sm-instagram:after {
+  content: "";
+  right: 0.2rem;
+}
+.yg .alert {
+  border-left-width: 0.45rem;
+}
+.yg .card, .yg .card-tflrail, .yg .card-tram, .yg .card-dlr, .yg .card-overground, .yg .card-waterloocity, .yg .card-victoria, .yg .card-piccadilly, .yg .card-northern, .yg .card-metropolitan, .yg .card-jubilee, .yg .card-hammersmithcity, .yg .card-district, .yg .card-circle, .yg .card-central, .yg .card-bakerloo, .yg .card-dark, .yg .card-visitor {
+  margin-bottom: 1rem;
+  background-color: #eeeeee;
+  border: 0rem;
+  border-bottom: 0.25rem solid #cccccc;
+}
+.yg .card.card-link a, .yg .card-link.card-tflrail a, .yg .card-link.card-tram a, .yg .card-link.card-dlr a, .yg .card-link.card-overground a, .yg .card-link.card-waterloocity a, .yg .card-link.card-victoria a, .yg .card-link.card-piccadilly a, .yg .card-link.card-northern a, .yg .card-link.card-metropolitan a, .yg .card-link.card-jubilee a, .yg .card-link.card-hammersmithcity a, .yg .card-link.card-district a, .yg .card-link.card-circle a, .yg .card-link.card-central a, .yg .card-link.card-bakerloo a, .yg .card-link.card-dark a, .yg .card-link.card-visitor a {
+  color: inherit;
+  text-decoration: none;
+}
+.yg .card.card-link:hover, .yg .card-link.card-tflrail:hover, .yg .card-link.card-tram:hover, .yg .card-link.card-dlr:hover, .yg .card-link.card-overground:hover, .yg .card-link.card-waterloocity:hover, .yg .card-link.card-victoria:hover, .yg .card-link.card-piccadilly:hover, .yg .card-link.card-northern:hover, .yg .card-link.card-metropolitan:hover, .yg .card-link.card-jubilee:hover, .yg .card-link.card-hammersmithcity:hover, .yg .card-link.card-district:hover, .yg .card-link.card-circle:hover, .yg .card-link.card-central:hover, .yg .card-link.card-bakerloo:hover, .yg .card-link.card-dark:hover, .yg .card-link.card-visitor:hover {
+  background-color: #eff6fd;
+  border-bottom-color: #2070b0;
+}
+.yg .card.card-link:hover .card-body, .yg .card-link.card-tflrail:hover .card-body, .yg .card-link.card-tram:hover .card-body, .yg .card-link.card-dlr:hover .card-body, .yg .card-link.card-overground:hover .card-body, .yg .card-link.card-waterloocity:hover .card-body, .yg .card-link.card-victoria:hover .card-body, .yg .card-link.card-piccadilly:hover .card-body, .yg .card-link.card-northern:hover .card-body, .yg .card-link.card-metropolitan:hover .card-body, .yg .card-link.card-jubilee:hover .card-body, .yg .card-link.card-hammersmithcity:hover .card-body, .yg .card-link.card-district:hover .card-body, .yg .card-link.card-circle:hover .card-body, .yg .card-link.card-central:hover .card-body, .yg .card-link.card-bakerloo:hover .card-body, .yg .card-link.card-dark:hover .card-body, .yg .card-link.card-visitor:hover .card-body {
+  border-right: 2rem solid #2070b0;
+}
+.yg .card.card-link .card-body, .yg .card-link.card-tflrail .card-body, .yg .card-link.card-tram .card-body, .yg .card-link.card-dlr .card-body, .yg .card-link.card-overground .card-body, .yg .card-link.card-waterloocity .card-body, .yg .card-link.card-victoria .card-body, .yg .card-link.card-piccadilly .card-body, .yg .card-link.card-northern .card-body, .yg .card-link.card-metropolitan .card-body, .yg .card-link.card-jubilee .card-body, .yg .card-link.card-hammersmithcity .card-body, .yg .card-link.card-district .card-body, .yg .card-link.card-circle .card-body, .yg .card-link.card-central .card-body, .yg .card-link.card-bakerloo .card-body, .yg .card-link.card-dark .card-body, .yg .card-link.card-visitor .card-body {
+  border-right: 2rem solid #eeeeee;
+}
+.yg .card-visitor {
+  border-bottom-color: #dc006b;
+}
+.yg .card-dark {
+  color: #eff6fd;
+  background-color: #2d3039;
+  border-bottom-color: #121315;
+}
+.yg .card-dark.card-link:hover {
+  background-color: #121315;
+}
+.yg .card-dark.card-link .card-body {
+  border-right-color: #2d3039;
+}
+.yg .card-bakerloo {
+  color: #eff6fd;
+  background-color: #894e24;
+  border-bottom-color: #633717;
+}
+.yg .card-bakerloo.card-link:hover {
+  background-color: #633717;
+}
+.yg .card-bakerloo.card-link .card-body {
+  border-right-color: #894e24;
+}
+.yg .card-central {
+  color: #eff6fd;
+  background-color: #dc241f;
+  border-bottom-color: #a71F1b;
+}
+.yg .card-central.card-link:hover {
+  background-color: #a71F1b;
+}
+.yg .card-central.card-link .card-body {
+  border-right-color: #dc241f;
+}
+.yg .card-circle {
+  color: #000000;
+  background-color: #ffce00;
+  border-bottom-color: #b99709;
+}
+.yg .card-circle.card-link:hover {
+  background-color: #b99709;
+}
+.yg .card-circle.card-link .card-body {
+  border-right-color: #ffce00;
+}
+.yg .card-district {
+  color: #eff6fd;
+  background-color: #007229;
+  border-bottom-color: #094920;
+}
+.yg .card-district.card-link:hover {
+  background-color: #094920;
+}
+.yg .card-district.card-link .card-body {
+  border-right-color: #007229;
+}
+.yg .card-hammersmithcity {
+  color: #000000;
+  background-color: #d799af;
+  border-bottom-color: #cb3a6d;
+}
+.yg .card-hammersmithcity.card-link:hover {
+  background-color: #cb3a6d;
+}
+.yg .card-hammersmithcity.card-link .card-body {
+  border-right-color: #d799af;
+}
+.yg .card-jubilee {
+  color: #eff6fd;
+  background-color: #6a7278;
+  border-bottom-color: #383b3d;
+}
+.yg .card-jubilee.card-link:hover {
+  background-color: #383b3d;
+}
+.yg .card-jubilee.card-link .card-body {
+  border-right-color: #6a7278;
+}
+.yg .card-metropolitan {
+  color: #eff6fd;
+  background-color: #751056;
+  border-bottom-color: #3e092e;
+}
+.yg .card-metropolitan.card-link:hover {
+  background-color: #3e092e;
+}
+.yg .card-metropolitan.card-link .card-body {
+  border-right-color: #751056;
+}
+.yg .card-northern {
+  color: #eff6fd;
+  background-color: #000000;
+  border-bottom-color: #353635;
+}
+.yg .card-northern.card-link:hover {
+  background-color: #353635;
+}
+.yg .card-northern.card-link .card-body {
+  border-right-color: #000000;
+}
+.yg .card-piccadilly {
+  color: #eff6fd;
+  background-color: #0019a8;
+  border-bottom-color: #020931;
+}
+.yg .card-piccadilly.card-link:hover {
+  background-color: #020931;
+}
+.yg .card-piccadilly.card-link .card-body {
+  border-right-color: #0019a8;
+}
+.yg .card-victoria {
+  color: #eff6fd;
+  background-color: #00a0e2;
+  border-bottom-color: #04435d;
+}
+.yg .card-victoria.card-link:hover {
+  background-color: #04435d;
+}
+.yg .card-victoria.card-link .card-body {
+  border-right-color: #00a0e2;
+}
+.yg .card-waterloocity {
+  color: #000000;
+  background-color: #76d0bd;
+  border-bottom-color: #368776;
+}
+.yg .card-waterloocity.card-link:hover {
+  background-color: #368776;
+}
+.yg .card-waterloocity.card-link .card-body {
+  border-right-color: #76d0bd;
+}
+.yg .card-overground {
+  color: #eff6fd;
+  background-color: #e86a10;
+  border-bottom-color: #9c480d;
+}
+.yg .card-overground.card-link:hover {
+  background-color: #9c480d;
+}
+.yg .card-overground.card-link .card-body {
+  border-right-color: #e86a10;
+}
+.yg .card-dlr {
+  color: #000000;
+  background-color: #00afad;
+  border-bottom-color: #044e4d;
+}
+.yg .card-dlr.card-link:hover {
+  background-color: #044e4d;
+}
+.yg .card-dlr.card-link .card-body {
+  border-right-color: #00afad;
+}
+.yg .card-tram {
+  color: #000000;
+  background-color: #66cc00;
+  border-bottom-color: #2b5205;
+}
+.yg .card-tram.card-link:hover {
+  background-color: #2b5205;
+}
+.yg .card-tram.card-link .card-body {
+  border-right-color: #66cc00;
+}
+.yg .card-tflrail {
+  color: #eff6fd;
+  background-color: #0019a8;
+  border-bottom-color: #020931;
+}
+.yg .card-tflrail.card-link:hover {
+  background-color: #020931;
+}
+.yg .card-tflrail.card-link .card-body {
+  border-right-color: #0019a8;
+}
+
+/*# sourceMappingURL=yg.css.map */

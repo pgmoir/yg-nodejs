@@ -1,0 +1,271 @@
+.alert {
+  border-left-width: 0.45rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+  background-color: $gallery;
+  border: 0rem;
+  border-bottom: .25rem solid $silver;
+  &.card-link {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $selago;
+      border-bottom-color: $matisse;
+      .card-body {
+        border-right: 2rem solid $matisse;
+      }
+    }
+    .card-body {
+      border-right: 2rem solid $gallery;
+    }
+  }
+}
+
+.card-visitor {
+  @extend .card;
+  border-bottom-color: $razzmatazz;
+}
+
+.card-dark {
+  @extend .card;
+  color: $lightside;
+  background-color:$charade;
+  border-bottom-color: $woodsmoke;
+  &.card-link {
+    &:hover {
+      background-color: $woodsmoke;
+    }
+    .card-body {
+      border-right-color: $charade;
+    }
+  }
+}
+
+.card-bakerloo {
+  @extend .card;
+  color: $lightside;
+  background-color:$bakerloo;
+  border-bottom-color: $bakerloo-dark;
+  &.card-link {
+    &:hover {
+      background-color: $bakerloo-dark;
+    }
+    .card-body {
+      border-right-color: $bakerloo;
+    }
+  }
+}
+
+.card-central {
+  @extend .card;
+  color: $lightside;
+  background-color:$central;
+  border-bottom-color: $central-dark;
+  &.card-link {
+    &:hover {
+      background-color: $central-dark;
+    }
+    .card-body {
+      border-right-color: $central;
+    }
+  }
+}
+
+.card-circle {
+  @extend .card;
+  color: $darkside;
+  background-color:$circle;
+  border-bottom-color: $circle-dark;
+  &.card-link {
+    &:hover {
+      background-color: $circle-dark;
+    }
+    .card-body {
+      border-right-color: $circle;
+    }
+  }
+}
+
+.card-district {
+  @extend .card;
+  color: $lightside;
+  background-color:$district;
+  border-bottom-color: $district-dark;
+  &.card-link {
+    &:hover {
+      background-color: $district-dark;
+    }
+    .card-body {
+      border-right-color: $district;
+    }
+  }
+}
+
+.card-hammersmithcity {
+  @extend .card;
+  color: $darkside;
+  background-color:$hammersmithcity;
+  border-bottom-color: $hammersmithcity-dark;
+  &.card-link {
+    &:hover {
+      background-color: $hammersmithcity-dark;
+    }
+    .card-body {
+      border-right-color: $hammersmithcity;
+    }
+  }
+}
+
+.card-jubilee {
+  @extend .card;
+  color: $lightside;
+  background-color:$jubilee;
+  border-bottom-color: $jubilee-dark;
+  &.card-link {
+    &:hover {
+      background-color: $jubilee-dark;
+    }
+    .card-body {
+      border-right-color: $jubilee;
+    }
+  }
+}
+
+.card-metropolitan {
+  @extend .card;
+  color: $lightside;
+  background-color:$metropolitan;
+  border-bottom-color: $metropolitan-dark;
+  &.card-link {
+    &:hover {
+      background-color: $metropolitan-dark;
+    }
+    .card-body {
+      border-right-color: $metropolitan;
+    }
+  }
+}
+
+.card-northern {
+  @extend .card;
+  color: $lightside;
+  background-color:$northern;
+  border-bottom-color: $northern-dark;
+  &.card-link {
+    &:hover {
+      background-color: $northern-dark;
+    }
+    .card-body {
+      border-right-color: $northern;
+    }
+  }
+}
+
+.card-piccadilly {
+  @extend .card;
+  color: $lightside;
+  background-color:$piccadilly;
+  border-bottom-color: $piccadilly-dark;
+  &.card-link {
+    &:hover {
+      background-color: $piccadilly-dark;
+    }
+    .card-body {
+      border-right-color: $piccadilly;
+    }
+  }
+}
+
+.card-victoria {
+  @extend .card;
+  color: $lightside;
+  background-color:$victoria;
+  border-bottom-color: $victoria-dark;
+  &.card-link {
+    &:hover {
+      background-color: $victoria-dark;
+    }
+    .card-body {
+      border-right-color: $victoria;
+    }
+  }
+}
+
+.card-waterloocity {
+  @extend .card;
+  color: $darkside;
+  background-color:$waterloocity;
+  border-bottom-color: $waterloocity-dark;
+  &.card-link {
+    &:hover {
+      background-color: $waterloocity-dark;
+    }
+    .card-body {
+      border-right-color: $waterloocity;
+    }
+  }
+}
+
+.card-overground {
+  @extend .card;
+  color: $lightside;
+  background-color:$overground;
+  border-bottom-color: $overground-dark;
+  &.card-link {
+    &:hover {
+      background-color: $overground-dark;
+    }
+    .card-body {
+      border-right-color: $overground;
+    }
+  }
+}
+
+.card-dlr {
+  @extend .card;
+  color: $darkside;
+  background-color:$dlr;
+  border-bottom-color: $dlr-dark;
+  &.card-link {
+    &:hover {
+      background-color: $dlr-dark;
+    }
+    .card-body {
+      border-right-color: $dlr;
+    }
+  }
+}
+
+.card-tram {
+  @extend .card;
+  color: $darkside;
+  background-color:$tram;
+  border-bottom-color: $tram-dark;
+  &.card-link {
+    &:hover {
+      background-color: $tram-dark;
+    }
+    .card-body {
+      border-right-color: $tram;
+    }
+  }
+}
+
+.card-tflrail {
+  @extend .card;
+  color: $lightside;
+  background-color:$tflrail;
+  border-bottom-color: $tflrail-dark;
+  &.card-link {
+    &:hover {
+      background-color: $tflrail-dark;
+    }
+    .card-body {
+      border-right-color: $tflrail;
+    }
+  }
+}

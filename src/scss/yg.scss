@@ -1,0 +1,18 @@
+/* Scss Document */
+
+@charset "UTF-8";
+
+/* Imports */
+
+// @import 'reset';
+// @import 'colour';
+// @import 'base';
+.yg {
+  @import 'yg-colors';
+  @import 'yg-structure';
+  @import 'yg-headers';
+  @import 'yg-lists';
+  @import 'yg-bootstrap';
+}
+
+// @import 'responsive';

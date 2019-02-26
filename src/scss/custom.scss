@@ -1,0 +1,31 @@
+/* import only the necessary Bootstrap files */
+@import "../../node_modules/bootstrap/scss/functions"; 
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* -------begin customization-------- */
+$colors: (
+  "" + blue: #004C9E
+);
+
+/* required to bring primary and secondary colors to AAA standards */
+$theme-colors: (
+  primary: #004C9E,
+  secondary: #535A56
+);
+
+/* required to bring link color to AAA standards */
+$link-color: #004C9E;
+
+/* required to bring dark navbar to AAA standards */
+$navbar-dark-color: rgba(255, 255, 255, 0.8);
+$navbar-dark-hover-color: rgba(255, 255, 255, 0.9);
+
+/* required to bring muted color state to AAA standards */
+$text-muted: $gray-700;
+
+// $h1-font-size: 3rem;
+$headings-line-height: 1.5;
+/* -------end customization-------- */
+
+/* finally, import Bootstrap to set the changes! */
+@import "../../node_modules/bootstrap/scss/bootstrap";

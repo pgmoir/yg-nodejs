@@ -1,0 +1,23 @@
+<%- include('head') %>
+
+<%- include('title', { title: title }) %>
+
+<section id="main" class="container-fluid">
+  <div class="container-yg">
+    <div class="row">
+      <h2 class="sr-only">Links to articles related to topic</h2>
+      <div class="col-12 col-lg-8" role="main">
+        <div class="row">
+          <% for (let card of body.cards) { %>
+          <div class="col-12 col-sm-6">
+            <%- include('card', { card: card }) %>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <%- include('rhnav', { rhnav: rhnav }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('foot') %>

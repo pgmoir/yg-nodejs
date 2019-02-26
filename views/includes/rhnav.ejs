@@ -1,0 +1,11 @@
+<div class="col-12 col-lg-4" role="complementary">
+  <h2 class="sr-only">Supplementary features and navigation to related topics</h2>
+    <!-- right hand nav bit -->
+    <% for (let card of rhnav.cards) { %>
+      <% if (card.template === undefined) { %>
+        <%- include('card', { card: card }) %>
+      <% } else { %>
+        <%- include(card.template, { card: card }) %>
+      <% } %>
+    <% } %>
+</div>

@@ -1,0 +1,18 @@
+<div class="card <%= card.link !== undefined ? 'card-link' : '' %> <%= card.style !== undefined ? card.style : '' %>">
+  <% if (card.link !== undefined) { %>
+  <a href="<%= card.link %>">
+  <% } %>
+    <% if (card.image !== undefined) { %>
+    <img class="card-img-top" src="<%= card.image.url %>" alt="<%= card.image.alt %>">
+    <% } %>
+    <div class="card-body">
+      <h3 class="card-title h5"><%= card.title %></h3>
+      <% if (card.texts != null) { %>
+      <% for (let text of card.texts) { %>
+        <p class="card-text"><%- text %></p>
+      <% } } %>
+    </div>
+  <% if (card.link !== undefined) { %>
+  </a>
+  <% } %>
+</div>

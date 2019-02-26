@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header bg-dark text-white"><%= card.title %></div>
+  <div class="card-body">
+    <ul class="list-group">
+      <% for (let link of card.links) { %>
+      <li class="list-group-item"><a href="<%= link.url %>"><%= link.title %></a></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+
